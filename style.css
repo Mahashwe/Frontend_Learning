@@ -1,0 +1,22 @@
+img {
+width: 200px;
+border-radius: 20px;
+float: left;
+margin-right: 10px;
+display: block;
+margin-top: 20px;
+}
+
+.div link a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-title{
+    text-align: topcenter;
+}
+
+#guide {
+    color: blue;
+    font-weight: bold;
+}
