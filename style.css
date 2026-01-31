@@ -1,10 +1,13 @@
 *{
     font-family: poppins, sans-serif;
-    background-color: beige;
 }
 
 .sample{
     padding: 10px;
+}
+
+body h1{
+    text-align: center;
 }
 
 .image_row{
@@ -17,26 +20,75 @@
   border-radius: 20px;
 }
 
-.div link a{
-    display: block;
-    margin-bottom: 10px;
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .section-title{
-    text-align: topcenter;
+    text-align: center;
 }
 
 #guide {
-    color: blue;
+    color: rgb(239, 135, 17);
     font-weight: bold;
 }
 
-button {
+.btn{
     background-color: rgb(233, 226, 40);
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-style: normal;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-section {
+    padding: 10px;
+    border-radius: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.guide-section {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.gallery-section{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: beige;
+}
+
+.gallery-section h2{
+    color: rgb(239, 135, 17);
+
+}
+
+
+.image_row_gallery{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px; 
+    margin-bottom: 20px;  
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.image_row_gallery img {
+  width: 300px;
+  border-radius: 20px;
+
 }
