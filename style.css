@@ -1,10 +1,20 @@
-img {
-width: 200px;
-border-radius: 20px;
-float: left;
-margin-right: 10px;
-display: block;
-margin-top: 20px;
+*{
+    font-family: poppins, sans-serif;
+    background-color: beige;
+}
+
+.sample{
+    padding: 10px;
+}
+
+.image_row{
+    display: flex;
+    gap: 20px;
+}
+
+.image_row img {
+  width: 250px;
+  border-radius: 20px;
 }
 
 .div link a{
@@ -19,4 +29,14 @@ margin-top: 20px;
 #guide {
     color: blue;
     font-weight: bold;
+}
+
+button {
+    background-color: rgb(233, 226, 40);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: normal;
 }
