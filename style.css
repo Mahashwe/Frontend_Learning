@@ -13,6 +13,7 @@ body h1{
 .image_row{
     display: flex;
     gap: 20px;
+    justify-content: center; 
 }
 
 .image_row img {
@@ -36,7 +37,7 @@ body h1{
 }
 
 .btn{
-    background-color: rgb(233, 226, 40);
+    background-color: rgb(239, 135, 17);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -91,4 +92,29 @@ body h1{
   width: 300px;
   border-radius: 20px;
 
+}
+
+.contact{
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;      
+  width: fit-content; 
+  text-align: left;  
+  padding-bottom: 10px;
+}
+.contact_list{
+    align-items: center;
+}
+
+.class_subtitle{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
