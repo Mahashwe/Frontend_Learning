@@ -310,10 +310,19 @@ footer p {
 }
 
 .hotgrid-2a,
-.hotgrid-2b,
-.hotgrid-2c{
+.hotgrid-2b{
+    grid-column: span 1;
+    grid-row: span 1;
     overflow: hidden;
 }
+
+.hotgrid-2c{
+    grid-column: span 2;
+    grid-row: span 1;
+    overflow: hidden;
+}
+
+
 
 .hotgrid-2a img,
 .hotgrid-2b img,
