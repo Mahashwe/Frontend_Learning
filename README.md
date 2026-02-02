@@ -137,7 +137,7 @@
 
 ---
 
-## 📋 CSS Properties - Plain English Explanations
+## 📋 CSS Properties - Learnings
 
 ### **Spacing & Box Model**
 
