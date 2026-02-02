@@ -253,5 +253,17 @@ footer p {
 .main{
     background-color: beige;
     overflow: hidden;
+}
 
+.nav h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(11, 11, 11);
+}
+
+.links a {
+    color: rgb(239, 135, 17);
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
 }
