@@ -151,3 +151,16 @@ body h1{
     margin-top: 0px;
     margin-left: 550px;
 }
+.parent{
+    display: flex;
+    justify-content:space-between;
+}
+
+.child1{
+    flex-basis: 50%;
+}
+
+.child2{
+    flex-basis: 50%;
+    text-align: left;
+}
