@@ -389,3 +389,30 @@ footer p {
     grid-area: h;
 }
 
+@media screen and (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        height: auto;
+    }
+
+    .hotgrid-1,
+    .hotgrid-2a,
+    .hotgrid-2b,
+    .hotgrid-2c {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .complex-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas:
+            "a a"
+            "a a"
+            "b c"
+            "d e"
+            "f g"
+            "h h";
+    }
+}
