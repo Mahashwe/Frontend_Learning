@@ -2,6 +2,10 @@
     font-family: poppins, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .sample{
     padding: 10px;
@@ -23,10 +27,39 @@ body h1{
   border-radius: 20px;
 }
 
+.header {
+  background-color: beige;
+  padding: 20px 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
 .links {
   display: flex;
-  justify-content: center;
   gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgb(239, 135, 17);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: lighter;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .section-title{
@@ -36,21 +69,6 @@ body h1{
 #guide {
     color: rgb(239, 135, 17);
     font-weight: bold;
-}
-
-.btn{
-    background-color: rgb(239, 135, 17);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-style: normal;
-    margin-top: 15px;
-    display: inline-block;
-    padding: 12px 24px;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .btn:hover {
@@ -141,16 +159,16 @@ body h1{
 .btn_2{
     background-color: rgb(239, 135, 17);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-style: normal;
     display: inline-block;
-    padding: 12px 24px;
+    padding: 15px 24px;
     font-weight: bold;
     text-decoration: none;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 550px;
 }
 
@@ -217,4 +235,20 @@ body h1{
     border-radius: 10px;
     padding-top: 20px;
     padding-bottom: 10px;
+}
+
+footer {
+    background-color: beige;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 20px 0 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.main{
+    background-color: beige;
 }

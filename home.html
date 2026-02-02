@@ -3,20 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <h1>Welcome to the Home Page</h1>
-    <div class="links">
-      <link rel="stylesheet" href="style.css" />
-      <a href="about.html" class="btn">About</a>
-      <a href="images/food.jpg" class="btn">Dog Food</a>
-      <a href="images/buy.jpg" download class="btn">Buy Dog Food</a>
-      <a href="#guide" class="btn">Guide</a>
-      <a href="https://www.google.com" target="_blank" class="btn"
-        >Search Online</a
-      >
-    </div>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo" style="color: rgb(239, 135, 17)">
+          <h1>Dog Guide</h1>
+        </div>
+        <div class="links">
+          <a href="about.html" class="btn">About</a>
+          <a href="images/food.jpg" class="btn">Dog Food</a>
+          <a href="images/buy.jpg" download class="btn">Buy Dog Food</a>
+          <a href="#guide" class="btn">Guide</a>
+          <a href="https://www.google.com" target="_blank" class="btn"
+            >Search Online</a
+          >
+        </div>
+      </nav>
+    </header>
     <p class="sample">This is a sample home page for testing <em>CODING</em></p>
     <section>
       <div class="image_row">
@@ -199,9 +205,9 @@
         </div>
       </form>
     </section>
-    <div>
+    <footer>
       <a href="#top" class="btn">Back to Top</a>
-    </div>
-    <p>&copy; Sample Copyright</p>
+      <p>&copy; Sample Copyright</p>
+    </footer>
   </body>
 </html>
