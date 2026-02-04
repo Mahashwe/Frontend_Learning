@@ -6,14 +6,17 @@
     <title>Document</title>
   </head>
   <body>
+    <link rel="stylesheet" href="style.css" />
     <h1 class="greeting">Calculator</h1>
     <p>Enter Numbers</p>
     <input type="number" placeholder="enter number 1" id="input1" />
     <input type="number" placeholder="enter number 2" id="input2" />
-    <button id="addBtn" onclick="adding()">Add</button>
-    <button id="subBtn" onclick="diff()">Subtract</button>
-    <button id="mulBtn" onclick="multiply()">Multiply</button>
-    <button id="divBtn" onclick="divide()">Divide</button>
+    <div class="buttons">
+      <button id="addBtn" onclick="adding()">Add</button>
+      <button id="subBtn" onclick="diff()">Subtract</button>
+      <button id="mulBtn" onclick="multiply()">Multiply</button>
+      <button id="divBtn" onclick="divide()">Divide</button>
+    </div>
     <p id="result"></p>
     <script src="index.js"></script>
   </body>
