@@ -7,16 +7,26 @@
   </head>
   <body>
     <link rel="stylesheet" href="style.css" />
-    <h1 class="greeting">Calculator</h1>
-    <p>Enter Numbers</p>
-    <input type="number" placeholder="enter number 1" id="input1" />
-    <input type="number" placeholder="enter number 2" id="input2" />
-    <div class="buttons">
-      <button id="addBtn" onclick="adding()">Add</button>
-      <button id="subBtn" onclick="diff()">Subtract</button>
-      <button id="mulBtn" onclick="multiply()">Multiply</button>
-      <button id="divBtn" onclick="divide()">Divide</button>
+    <div class="container">
+      <h1 class="calci">Calculator</h1>
+      <p>Enter Numbers</p>
+      <input type="number" placeholder="enter number 1" id="input1" />
+      <input type="number" placeholder="enter number 2" id="input2" />
+      <div class="buttons">
+        <button id="addBtn" onclick="adding()">Add</button>
+        <button id="subBtn" onclick="diff()">Subtract</button>
+        <button id="mulBtn" onclick="multiply()">Multiply</button>
+        <button id="divBtn" onclick="divide()">Divide</button>
+      </div>
     </div>
+    <section>
+      <h2>Guess the random number</h2>
+      <input type="number" id="guessInput" placeholder="Enter your guess" />
+      <button id="guessBtn" onclick="checkGuess()">Submit Guess</button>
+      <p id="score">Your Score:</p>
+      <p id="guessResult">Result:</p>
+      <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+    </section>
     <p id="result"></p>
     <script src="index.js"></script>
   </body>

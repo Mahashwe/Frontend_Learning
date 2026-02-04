@@ -26,3 +26,31 @@ function divide(){
     const answer = input1 / input2;
     document.getElementById("result").textContent = "The result is " + answer;
 }
+
+let s = 3;
+function checkGuess(){
+    let num = (Math.random() * 10) + 1;
+    num = Math.floor(num);
+    let userGuess = Number(document.getElementById("guessInput").value);
+    if(userGuess === num){
+        alert("Congratulations! You guessed the correct number.");
+    }
+    else{
+        s = s - 1;
+        if(s>0){
+            document.getElementById("guessResult").textContent = "Wrong guess! Try again.";
+            document.getElementById("score").textContent = "Your Current Score: " + s;
+        }
+        if(s === 0){
+            alert("Game Over! You've used all your attempts.");
+        }
+    }
+}
+
+function resetGame() {
+    s = 3;
+
+    document.getElementById("guessResult").textContent = "";
+    document.getElementById("score").textContent = "Your Current Score: " + s;
+    document.getElementById("guessInput").value = "";
+}
