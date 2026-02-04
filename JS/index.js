@@ -28,15 +28,17 @@ function divide(){
 }
 
 let s = 3;
+let num = (Math.random() * 5) + 1;
+num = Math.floor(num);
+
 function checkGuess(){
-    let num = (Math.random() * 10) + 1;
-    num = Math.floor(num);
     let userGuess = Number(document.getElementById("guessInput").value);
     if(userGuess === num){
         alert("Congratulations! You guessed the correct number.");
     }
     else{
         s = s - 1;
+        document.querySelector(".progress").style.width = (s * 100) + "px";
         if(s>0){
             document.getElementById("guessResult").textContent = "Wrong guess! Try again.";
             document.getElementById("score").textContent = "Your Current Score: " + s;
@@ -53,4 +55,10 @@ function resetGame() {
     document.getElementById("guessResult").textContent = "";
     document.getElementById("score").textContent = "Your Current Score: " + s;
     document.getElementById("guessInput").value = "";
+    
+    let progressBar = document.querySelector(".progress");
+    progressBar.style.width = "300px";
+    
+    num= (Math.floor(Math.random() * 5) + 1);
+
 }
