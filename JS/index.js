@@ -1,34 +1,28 @@
-//normal function (function inside a object) - returns value only 
-// let circle={
-//     radius:1,
-//     location:{
-//         x:1,
-//         y:1  
-//     },
-//     draw: function(){
-//         console.log("draw")
-//     }
-// };
+function adding(){
+    let input1 = Number(document.getElementById("input1").value);
+    let input2 = Number(document.getElementById("input2").value);
+    const answer = input1 + input2;
 
-//factory function (function that returns object)
-// function circle(radius){
-//     return{
-//     radius,
-//     hi : function(){
-//         console.log("this is test");
-//     }
-// };
-// }
+    document.getElementById("result").textContent = "The result is " + answer;
+}
 
-// const a = circle(7);
-// console.log(a)
+function diff(){
+    let input1 = Number(document.getElementById("input1").value);
+    let input2 = Number(document.getElementById("input2").value);
+    const answer = input1 - input2;
+    document.getElementById("result").textContent = "The result is " + answer;
+}
 
-// constructor function (function that is used to create object using 'new' keyword)
-function Circle(radius){
-    this.radius=radius; 
-    this.draw=function(){
-        console.log("draw from constructor function");
-    }
-}           
-const b = new Circle(9);
-console.log(b); 
+function multiply(){
+    let input1 = Number(document.getElementById("input1").value);
+    let input2 = Number(document.getElementById("input2").value);
+    const answer = input1 * input2;
+    document.getElementById("result").textContent = "The result is " + answer;
+}   
+
+function divide(){
+    let input1 = Number(document.getElementById("input1").value);
+    let input2 = Number(document.getElementById("input2").value);
+    const answer = input1 / input2;
+    document.getElementById("result").textContent = "The result is " + answer;
+}
